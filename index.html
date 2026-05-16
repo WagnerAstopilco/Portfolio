@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="auto">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wagner Astopilco — Dev Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap"
+    rel="stylesheet" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- ══════════════════ NAVBAR ══════════════════ -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-inner">
+      <a href="#home" class="brand" data-i18n="brand">WA<span>.</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" data-i18n="nav.about">Sobre mí</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Proyectos</a></li>
+        <li><a href="#services" data-i18n="nav.services">Servicios</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <button class="ctrl-btn" id="langToggle" aria-label="Toggle language" title="ES / EN">
+          <span class="lang-label" id="langLabel">EN</span>
+        </button>
+        <button class="ctrl-btn" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ══════════════════ HERO / HOME ══════════════════ -->
+  <section class="section hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow" data-i18n="hero.eyebrow">Desarrollador Web &amp; Móvil</p>
+      <h1 class="hero-name">Wagner <em>Astopilco</em></h1>
+      <p class="hero-tagline" data-i18n="hero.tagline">
+        Construyendo soluciones modernas, funcionales y orientadas a resultados.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary" data-i18n="hero.cta.primary">Ver proyectos</a>
+        <a href="#contact" class="btn btn-ghost" data-i18n="hero.cta.secondary">Hablemos</a>
+      </div>
+      <div class="hero-stack">
+        <span class="stack-pill">Laravel</span>
+        <span class="stack-pill">Vue.js</span>
+        <span class="stack-pill">MySQL</span>
+        <!-- <span class="stack-pill">Java Android</span> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ ABOUT ══════════════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label" data-i18n="nav.about">Sobre mí</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title" data-i18n="about.title">Construyendo<br><em>con propósito</em></h2>
+          <p data-i18n="about.p1">
+            Soy Ingeniero de Sistemas con experiencia en el desarrollo de aplicaciones web modernas y aplicaciones
+            Android. Mi enfoque está en entregar productos robustos, bien arquitecturados y con una experiencia de
+            usuario cuidada.
+          </p>
+          <p data-i18n="about.p2">
+            Trabajo principalmente con <strong>Laravel</strong>, <strong>Vue.js</strong>, <strong>MySQL</strong> y
+            Android con <strong>Java</strong>. Actualmente profundizo en arquitectura de software, integración
+            frontend–backend, mejores prácticas de UX e integraciones con IA.
+          </p>
+          <a href="#contact" class="btn btn-primary" data-i18n="about.cta">Trabajemos juntos</a>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num">5+</span>
+            <span class="stat-label" data-i18n="about.stat1">Años de experiencia</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">20+</span>
+            <span class="stat-label" data-i18n="about.stat2">Proyectos completados</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">10+</span>
+            <span class="stat-label" data-i18n="about.stat3">Tecnologías dominadas</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">100%</span>
+            <span class="stat-label" data-i18n="about.stat4">Compromiso con el cliente</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech stack icons -->
+      <div class="tech-section">
+        <p class="tech-label" data-i18n="about.tech">Tecnologías conocidas</p>
+        <div class="tech-grid">
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=java" alt="Java" /><span>Java</span></div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=php" alt="PHP" /><span>PHP</span></div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=py" alt="Python" /><span>Python</span></div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=cs" alt="C#" /><span>C#</span></div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=js" alt="JavaScript" /><span>JavaScript</span>
+          </div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=html" alt="HTML" /><span>HTML</span></div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=css" alt="CSS" /><span>CSS</span></div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=laravel" alt="Laravel" /><span>Laravel</span>
+          </div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=vue" alt="Vue.js" /><span>Vue.js</span></div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=spring" alt="Spring" /><span>Spring</span>
+          </div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=dotnet" alt=".NET" /><span>.NET</span></div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=bootstrap"
+              alt="Bootstrap" /><span>Bootstrap</span></div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=tailwind"
+              alt="Tailwind" /><span>Tailwind</span></div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" /><span>MySQL</span></div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=postgres"
+              alt="Postgres" /><span>Postgres</span></div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" /><span>MongoDB</span>
+          </div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=sqlite" alt="SQLite" /><span>SQLite</span>
+          </div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=firebase"
+              alt="Firebase" /><span>Firebase</span></div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=vscode" alt="VS Code" /><span>VS Code</span>
+          </div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=visualstudio" alt="Visual Studio" /><span>Vis.
+              Studio</span></div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=androidstudio"
+              alt="Android Studio" /><span>Android S.</span></div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=eclipse" alt="Eclipse" /><span>Eclipse</span>
+          </div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=github" alt="GitHub" /><span>GitHub</span>
+          </div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=postman" alt="Postman" /><span>Postman</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ PROJECTS ══════════════════ -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-label" data-i18n="nav.projects">Proyectos</div>
+      <h2 class="section-title" data-i18n="projects.title">Trabajo<em>destacado</em></h2>
+
+      <!-- Filter tabs -->
+      <div class="proj-filters">
+        <button class="filter-btn active" data-filter="all" data-i18n="projects.filter.all">Todos</button>
+        <button class="filter-btn" data-filter="web" data-i18n="projects.filter.web">Web</button>
+        <button class="filter-btn" data-filter="mobile" data-i18n="projects.filter.mobile">Móvil</button>
+        <button class="filter-btn" data-filter="ia" data-i18n="projects.filter.ia">IA</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <article class="proj-card" data-cat="web">
+          <div class="proj-img-wrap">
+            <div class="proj-placeholder" style="--c1:#1a2a4a;--c2:#0d6efd">
+              <i class="fas fa-dumbbell"></i>
+            </div>
+            <div class="proj-overlay">
+              <a href="#" class="proj-link" data-i18n="projects.demo">Demo</a>
+              <a href="https://github.com/WagnerAstopilco" class="proj-link" data-i18n="projects.code">Código</a>
+            </div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-tags"><span>Laravel</span><span>Vue.js</span><span>MySQL</span></div>
+            <h3 data-i18n="projects.gym.title">Sistema de Gimnasio</h3>
+            <p data-i18n="projects.gym.desc">Sistema administrativo para control de membresías, pagos y asistencia con
+              panel de estadísticas en tiempo real.</p>
+          </div>
+        </article>
+
+        <article class="proj-card" data-cat="web">
+          <div class="proj-img-wrap">
+            <div class="proj-placeholder" style="--c1:#2a1a1a;--c2:#c0392b">
+              <i class="fas fa-hotel"></i>
+            </div>
+            <div class="proj-overlay">
+              <a href="#" class="proj-link" data-i18n="projects.demo">Demo</a>
+              <a href="https://github.com/WagnerAstopilco" class="proj-link" data-i18n="projects.code">Código</a>
+            </div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-tags"><span>Laravel</span><span>Bootstrap</span><span>MySQL</span></div>
+            <h3 data-i18n="projects.hotel.title">Plataforma Hotelera</h3>
+            <p data-i18n="projects.hotel.desc">Sistema de reservas y gestión de habitaciones con panel administrativo
+              completo y reportes automáticos.</p>
+          </div>
+        </article>
+
+        <article class="proj-card" data-cat="ia">
+          <div class="proj-img-wrap">
+            <div class="proj-placeholder" style="--c1:#1a2a1a;--c2:#27ae60">
+              <i class="fas fa-plug"></i>
+            </div>
+            <div class="proj-overlay">
+              <a href="#" class="proj-link" data-i18n="projects.demo">Demo</a>
+              <a href="https://github.com/WagnerAstopilco" class="proj-link" data-i18n="projects.code">Código</a>
+            </div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-tags"><span>Python</span><span>scikit-learn</span></div>
+            <h3 data-i18n="projects.ia.title">Asistente de Inteligencia Artificial</h3>
+            <p data-i18n="projects.ia.desc">Solución de IA para automatización de procesos, análisis de datos y toma de
+              decisiones informadas.</p>
+          </div>
+        </article>
+
+        <article class="proj-card" data-cat="mobile">
+          <div class="proj-img-wrap">
+            <div class="proj-placeholder" style="--c1:#2a2a1a;--c2:#f39c12">
+              <i class="fas fa-mobile-screen-button"></i>
+            </div>
+            <div class="proj-overlay">
+              <a href="#" class="proj-link" data-i18n="projects.demo">Demo</a>
+              <a href="https://github.com/WagnerAstopilco" class="proj-link" data-i18n="projects.code">Código</a>
+            </div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-tags"><span>Java</span><span>Android</span><span>Firebase</span></div>
+            <h3 data-i18n="projects.app.title">App Android de Gestión</h3>
+            <p data-i18n="projects.app.desc">Aplicación móvil nativa con sincronización en tiempo real, modo offline y
+              notificaciones push para gestión de campo.</p>
+          </div>
+        </article>
+
+        <article class="proj-card" data-cat="web">
+          <div class="proj-img-wrap">
+            <div class="proj-placeholder" style="--c1:#1a1a2a;--c2:#8e44ad">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="proj-overlay">
+              <a href="#" class="proj-link" data-i18n="projects.demo">Demo</a>
+              <a href="https://github.com/WagnerAstopilco" class="proj-link" data-i18n="projects.code">Código</a>
+            </div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-tags"><span>Vue.js</span><span>Chart.js</span><span>Laravel</span></div>
+            <h3 data-i18n="projects.dash.title">Dashboard Analítico</h3>
+            <p data-i18n="projects.dash.desc">Panel de control con gráficos interactivos, exportación de reportes en
+              PDF/Excel y gestión de roles de usuario.</p>
+          </div>
+        </article>
+
+        <article class="proj-card" data-cat="mobile">
+          <div class="proj-img-wrap">
+            <div class="proj-placeholder" style="--c1:#1a2a2a;--c2:#16a085">
+              <i class="fas fa-cart-shopping"></i>
+            </div>
+            <div class="proj-overlay">
+              <a href="#" class="proj-link" data-i18n="projects.demo">Demo</a>
+              <a href="https://github.com/WagnerAstopilco" class="proj-link" data-i18n="projects.code">Código</a>
+            </div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-tags"><span>Java</span><span>Android</span><span>REST API</span></div>
+            <h3 data-i18n="projects.ecom.title">E-commerce Móvil</h3>
+            <p data-i18n="projects.ecom.desc">App de compras con carrito, pasarela de pagos integrada, seguimiento de
+              pedidos y panel de vendedor.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="proj-more">
+        <a href="https://github.com/WagnerAstopilco" target="_blank" class="btn btn-ghost"
+          data-i18n="projects.github">Ver más en GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ SERVICES ══════════════════ -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-label" data-i18n="nav.services">Servicios</div>
+      <h2 class="section-title" data-i18n="services.title">Lo que ofrezco</em></h2>
+
+      <div class="services-grid">
+
+        <div class="svc-card">
+          <div class="svc-icon"><i class="fas fa-globe"></i></div>
+          <h3 data-i18n="svc.landing.title">Landing Pages</h3>
+          <p data-i18n="svc.landing.desc">Páginas de presentación rápidas, optimizadas para conversión y adaptadas a
+            cualquier dispositivo.</p>
+          <ul class="svc-list">
+            <li data-i18n="svc.landing.f1">Diseño responsive</li>
+            <li data-i18n="svc.landing.f2">SEO básico</li>
+            <li data-i18n="svc.landing.f3">Formulario de contacto</li>
+          </ul>
+        </div>
+
+        <div class="svc-card svc-featured">
+          <div class="svc-badge" data-i18n="svc.badge">Popular</div>
+          <div class="svc-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3 data-i18n="svc.webapp.title">Aplicaciones Web</h3>
+          <p data-i18n="svc.webapp.desc">Sistemas administrativos completos con autenticación, roles, CRUD, reportes y
+            más.</p>
+          <ul class="svc-list">
+            <li data-i18n="svc.webapp.f1">Panel administrativo</li>
+            <li data-i18n="svc.webapp.f2">Gestión de usuarios</li>
+            <li data-i18n="svc.webapp.f3">Módulo de reportes</li>
+            <li data-i18n="svc.webapp.f4">Integración API</li>
+          </ul>
+        </div>
+
+        <div class="svc-card">
+          <div class="svc-icon"><i class="fab fa-android"></i></div>
+          <h3 data-i18n="svc.android.title">Apps Android</h3>
+          <p data-i18n="svc.android.desc">Aplicaciones móviles nativas con Java, conectadas a tu API o con base de datos
+            local.</p>
+          <ul class="svc-list">
+            <li data-i18n="svc.android.f1">UI moderna con Material</li>
+            <li data-i18n="svc.android.f2">Modo offline</li>
+            <li data-i18n="svc.android.f3">Push notifications</li>
+          </ul>
+        </div>
+
+        <div class="svc-card">
+          <div class="svc-icon"><i class="fas fa-wrench"></i></div>
+          <h3 data-i18n="svc.maint.title">Mantenimiento Web</h3>
+          <p data-i18n="svc.maint.desc">Soporte continuo para tus aplicaciones: corrección de bugs, actualizaciones,
+            optimización de rendimiento y seguridad.</p>
+          <ul class="svc-list">
+            <li data-i18n="svc.maint.f1">Corrección de errores</li>
+            <li data-i18n="svc.maint.f2">Actualizaciones de dependencias</li>
+            <li data-i18n="svc.maint.f3">Optimización y seguridad</li>
+          </ul>
+        </div>
+
+        <div class="svc-card">
+          <div class="svc-icon"><i class="fas fa-chart-pie"></i></div>
+          <h3 data-i18n="svc.dash.title">Dashboards</h3>
+          <p data-i18n="svc.dash.desc">Paneles de control con gráficos en tiempo real, KPIs y exportación de datos para
+            la toma de decisiones.</p>
+          <ul class="svc-list">
+            <li data-i18n="svc.dash.f1">Gráficos interactivos</li>
+            <li data-i18n="svc.dash.f2">Exportar PDF / Excel</li>
+            <li data-i18n="svc.dash.f3">Tiempo real</li>
+          </ul>
+        </div>
+
+        <div class="svc-card">
+          <div class="svc-icon"><i class="fas fa-robot"></i></div>
+          <h3 data-i18n="svc.ai.title">Asistentes IA</h3>
+          <p data-i18n="svc.ai.desc">Integración de inteligencia artificial en tus aplicaciones: chatbots,
+            automatización de tareas y procesamiento de lenguaje natural.</p>
+          <ul class="svc-list">
+            <li data-i18n="svc.ai.f1">Chatbots personalizados</li>
+            <li data-i18n="svc.ai.f2">Integración con APIs de IA</li>
+            <li data-i18n="svc.ai.f3">Automatización inteligente</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ CONTACT ══════════════════ -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-label" data-i18n="nav.contact">Contacto</div>
+      <h2 class="section-title" data-i18n="contact.title">Hablemos de tu proyecto</em></h2>
+      <p data-i18n="contact.intro">¿Tienes una idea o proyecto en mente? Estoy disponible para trabajos freelance y
+        colaboraciones. No dudes en escribirme.</p><br>
+
+      <div class="contact-solo">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name" data-i18n="contact.name">Nombre</label>
+            <input type="text" id="name" name="name" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="email" data-i18n="contact.email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="service" data-i18n="contact.service">Servicio de interés</label>
+            <select id="service" name="service">
+              <option value="" data-i18n="contact.service.default">Selecciona un servicio</option>
+              <option value="landing" data-i18n="svc.landing.title">Landing Page</option>
+              <option value="webapp" data-i18n="svc.webapp.title">Aplicación Web</option>
+              <option value="android" data-i18n="svc.android.title">App Android</option>
+              <option value="maint" data-i18n="svc.maint.title">Mantenimiento Web</option>
+              <option value="dashboard" data-i18n="svc.dash.title">Dashboard</option>
+              <option value="ai" data-i18n="svc.ai.title">Asistente IA</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message" data-i18n="contact.message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitBtn">
+            <span data-i18n="contact.send">Enviar mensaje</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+          <p class="form-success" id="formSuccess" data-i18n="contact.success">¡Mensaje enviado! Te responderé pronto.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ FOOTER ══════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="brand">WA<span>.</span></span>
+          <p data-i18n="footer.tagline">Construyendo soluciones web modernas,<br>funcionales y enfocadas en resultados
+            reales.</p>
+        </div>
+        <div class="footer-nav">
+          <p class="footer-nav-title" data-i18n="footer.nav.title">Navegación</p>
+          <ul>
+            <li><a href="#home" data-i18n="nav.home">Home</a></li>
+            <li><a href="#about" data-i18n="nav.about">Sobre mí</a></li>
+            <li><a href="#projects" data-i18n="nav.projects">Proyectos</a></li>
+            <li><a href="#services" data-i18n="nav.services">Servicios</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-social-col">
+          <p class="footer-nav-title" data-i18n="footer.social.title">Redes sociales</p>
+          <div class="footer-social">
+            <a href="https://linkedin.com/in/wagner-astopilco-17487410b/" target="_blank" aria-label="LinkedIn"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/WagnerAstopilco" target="_blank" aria-label="GitHub"><i
+                class="fab fa-github"></i></a>
+            <a href="https://fb.com/astopilco" target="_blank" aria-label="Facebook"><i
+                class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/51999999999" target="_blank" aria-label="WhatsApp"><i
+                class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copy">© 2025 Wagner Astopilco. Todos los derechos reservados.</p>
+        <p class="footer-made">Made with <i class="fas fa-heart"></i> in Cajamarca, Perú</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
