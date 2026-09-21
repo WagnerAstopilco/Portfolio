@@ -13,6 +13,17 @@
     rel="stylesheet" />
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+
+    <!-- Apple -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+
+    <!-- Manifest -->
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
 </head>
 
 <body>
@@ -89,15 +100,15 @@
         </div>
         <div class="about-stats">
           <div class="stat-card">
-            <span class="stat-num">5+</span>
+            <span class="stat-num">2+</span>
             <span class="stat-label" data-i18n="about.stat1">Años de experiencia</span>
           </div>
           <div class="stat-card">
-            <span class="stat-num">20+</span>
+            <span class="stat-num">8+</span>
             <span class="stat-label" data-i18n="about.stat2">Proyectos completados</span>
           </div>
           <div class="stat-card">
-            <span class="stat-num">10+</span>
+            <span class="stat-num">5+</span>
             <span class="stat-label" data-i18n="about.stat3">Tecnologías dominadas</span>
           </div>
           <div class="stat-card">
@@ -183,36 +194,34 @@
         <article class="proj-card" data-cat="web">
           <div class="proj-img-wrap">
             <div class="proj-placeholder" style="--c1:#2a1a1a;--c2:#c0392b">
-              <i class="fas fa-hotel"></i>
+              <img src="assets/Landing consultorio dental.png" alt="screenshot-dashboard">
             </div>
             <div class="proj-overlay">
-              <a href="#" class="proj-link" data-i18n="projects.demo">Demo</a>
-              <a href="https://github.com/WagnerAstopilco" class="proj-link" data-i18n="projects.code">Código</a>
+              <a href="https://san-antonio-dental-care.vercel.app/" target="_blank" class="proj-link" data-i18n="projects.demo">Demo</a>
+              <a href="https://github.com/WagnerAstopilco/LandingDentalClinic" target="_blank" class="proj-link" data-i18n="projects.code">Código</a>
             </div>
           </div>
           <div class="proj-info">
-            <div class="proj-tags"><span>Laravel</span><span>Bootstrap</span><span>MySQL</span></div>
-            <h3 data-i18n="projects.hotel.title">Plataforma Hotelera</h3>
-            <p data-i18n="projects.hotel.desc">Sistema de reservas y gestión de habitaciones con panel administrativo
-              completo y reportes automáticos.</p>
+            <div class="proj-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <h3 data-i18n="projects.dental.title">Landing Page de Consultorio Dental</h3>
+            <p data-i18n="projects.dental.desc">Página de presentación optimizada para conversión y adaptada a cualquier dispositivo.</p>
           </div>
         </article>
 
         <article class="proj-card" data-cat="ia">
           <div class="proj-img-wrap">
             <div class="proj-placeholder" style="--c1:#1a2a1a;--c2:#27ae60">
-              <i class="fas fa-plug"></i>
+              <img src="assets/asistenteReservasDeportivas.png" alt="screenshot-dashboard">
             </div>
             <div class="proj-overlay">
-              <a href="#" class="proj-link" data-i18n="projects.demo">Demo</a>
-              <a href="https://github.com/WagnerAstopilco" class="proj-link" data-i18n="projects.code">Código</a>
+              <a href="https://wagner-asto.app.n8n.cloud/webhook/4b13910e-8787-4253-8e6f-3d9d40df0665/chat" target="_blank" class="proj-link" data-i18n="projects.demo">Demo</a>
+              <a href="https://github.com/WagnerAstopilco/asistente-reservas-canchas" target="_blank" class="proj-link" data-i18n="projects.code">Código</a>
             </div>
           </div>
           <div class="proj-info">
-            <div class="proj-tags"><span>Python</span><span>scikit-learn</span></div>
-            <h3 data-i18n="projects.ia.title">Asistente de Inteligencia Artificial</h3>
-            <p data-i18n="projects.ia.desc">Solución de IA para automatización de procesos, análisis de datos y toma de
-              decisiones informadas.</p>
+            <div class="proj-tags"><span>n8n</span><span>google calendar</span><span>Gemini</span></div>
+            <h3 data-i18n="projects.ia.title">Asistente IA de Reservas Deportivas</h3>
+            <p data-i18n="projects.ia.desc">Solucion de automatización para reservar y agendar citas deportivas con google calendar, mercado pago y Gemini.</p>
           </div>
         </article>
 
@@ -245,7 +254,7 @@
             </div>
           </div>
           <div class="proj-info">
-            <div class="proj-tags"><span>Vue.js</span><span>Chart.js</span><span>Laravel</span></div>
+            <div class="proj-tags"><span>Vue.js</span><span>Laravel</span><span>MySQL</span></div>
             <h3 data-i18n="projects.dash.title">Dashboard Analítico</h3>
             <p data-i18n="projects.dash.desc">Panel de control con gráficos interactivos, exportación de reportes en
               PDF/Excel y gestión de roles de usuario.</p>
@@ -283,81 +292,78 @@
   <section class="section" id="services">
     <div class="container">
       <div class="section-label" data-i18n="nav.services">Servicios</div>
-      <h2 class="section-title" data-i18n="services.title">Lo que ofrezco</em></h2>
+      <h2 class="section-title" data-i18n="services.title">Te ofrezcemos</em></h2>
 
       <div class="services-grid">
 
-        <div class="svc-card">
+        <div class="svc-card svc-featured">
+          <div class="svc-badge" data-i18n="svc.badge">Popular</div>
           <div class="svc-icon"><i class="fas fa-globe"></i></div>
-          <h3 data-i18n="svc.landing.title">Landing Pages</h3>
-          <p data-i18n="svc.landing.desc">Páginas de presentación rápidas, optimizadas para conversión y adaptadas a
-            cualquier dispositivo.</p>
+          <h3 data-i18n="svc.websites.title">Desarrollo de páginas y sitios web</h3>
+          <p data-i18n="svc.websites.desc">Soluciones web orientadas a fortalecer la presencia digital, facilitar la información y generar nuevas oportunidades de interacción con potenciales clientes. </p>
           <ul class="svc-list">
-            <li data-i18n="svc.landing.f1">Diseño responsive</li>
-            <li data-i18n="svc.landing.f2">SEO básico</li>
-            <li data-i18n="svc.landing.f3">Formulario de contacto</li>
+            <li data-i18n="svc.websites.f1">Páginas web informativas</li>
+            <li data-i18n="svc.websites.f2">Sitios web corporativos</li>
+            <li data-i18n="svc.websites.f3">Landing pages</li>
+            <li data-i18n="svc.websites.f4">Catálogos de productos</li>
           </ul>
         </div>
 
-        <div class="svc-card svc-featured">
-          <div class="svc-badge" data-i18n="svc.badge">Popular</div>
+        <div class="svc-card ">
           <div class="svc-icon"><i class="fas fa-laptop-code"></i></div>
-          <h3 data-i18n="svc.webapp.title">Aplicaciones Web</h3>
-          <p data-i18n="svc.webapp.desc">Sistemas administrativos completos con autenticación, roles, CRUD, reportes y
-            más.</p>
+          <h3 data-i18n="svc.webapp.title">Sistemas web administrativos</h3>
+          <p data-i18n="svc.webapp.desc">Soluciones web destinadas a organizar y controlar procesos de negocio facilitando la gestión desde una plataforma adaptada a las necesidades específicas.</p>
           <ul class="svc-list">
-            <li data-i18n="svc.webapp.f1">Panel administrativo</li>
-            <li data-i18n="svc.webapp.f2">Gestión de usuarios</li>
-            <li data-i18n="svc.webapp.f3">Módulo de reportes</li>
-            <li data-i18n="svc.webapp.f4">Integración API</li>
+            <li data-i18n="svc.webapp.f1">Dashboards y sistemas de gestión </li>
+            <li data-i18n="svc.webapp.f2">Sistemas de gestión de clientes (CRM) </li>
+            <li data-i18n="svc.webapp.f3">Sistemas de gestión empresarial (ERP)</li>
           </ul>
         </div>
 
         <div class="svc-card">
           <div class="svc-icon"><i class="fab fa-android"></i></div>
-          <h3 data-i18n="svc.android.title">Apps Android</h3>
-          <p data-i18n="svc.android.desc">Aplicaciones móviles nativas con Java, conectadas a tu API o con base de datos
+          <h3 data-i18n="svc.android.title">Aplicaciones Android</h3>
+          <p data-i18n="svc.android.desc">Soluciones diseñadas para optimizar la experiencia del usuario en dispositivos móviles así como complementar servicios existentes.
             local.</p>
           <ul class="svc-list">
-            <li data-i18n="svc.android.f1">UI moderna con Material</li>
-            <li data-i18n="svc.android.f2">Modo offline</li>
-            <li data-i18n="svc.android.f3">Push notifications</li>
-          </ul>
-        </div>
-
-        <div class="svc-card">
-          <div class="svc-icon"><i class="fas fa-wrench"></i></div>
-          <h3 data-i18n="svc.maint.title">Mantenimiento Web</h3>
-          <p data-i18n="svc.maint.desc">Soporte continuo para tus aplicaciones: corrección de bugs, actualizaciones,
-            optimización de rendimiento y seguridad.</p>
-          <ul class="svc-list">
-            <li data-i18n="svc.maint.f1">Corrección de errores</li>
-            <li data-i18n="svc.maint.f2">Actualizaciones de dependencias</li>
-            <li data-i18n="svc.maint.f3">Optimización y seguridad</li>
-          </ul>
-        </div>
-
-        <div class="svc-card">
-          <div class="svc-icon"><i class="fas fa-chart-pie"></i></div>
-          <h3 data-i18n="svc.dash.title">Dashboards</h3>
-          <p data-i18n="svc.dash.desc">Paneles de control con gráficos en tiempo real, KPIs y exportación de datos para
-            la toma de decisiones.</p>
-          <ul class="svc-list">
-            <li data-i18n="svc.dash.f1">Gráficos interactivos</li>
-            <li data-i18n="svc.dash.f2">Exportar PDF / Excel</li>
-            <li data-i18n="svc.dash.f3">Tiempo real</li>
+            <li data-i18n="svc.android.f1">Desarrollo de producto a medida</li>
+            <li data-i18n="svc.android.f2">Complemento de servicio existente</li>
+            <li data-i18n="svc.android.f3">Herramientas para procesos internos</li>
           </ul>
         </div>
 
         <div class="svc-card">
           <div class="svc-icon"><i class="fas fa-robot"></i></div>
-          <h3 data-i18n="svc.ai.title">Asistentes IA</h3>
-          <p data-i18n="svc.ai.desc">Integración de inteligencia artificial en tus aplicaciones: chatbots,
-            automatización de tareas y procesamiento de lenguaje natural.</p>
+          <h3 data-i18n="svc.auto.title">Automatizaciones</h3>
+          <p data-i18n="svc.auto.desc">Soluciones orientadas a automatizar tareas, conectar herramientas y optimizar procesos, reduciendo la intervención manual.</p>
           <ul class="svc-list">
-            <li data-i18n="svc.ai.f1">Chatbots personalizados</li>
-            <li data-i18n="svc.ai.f2">Integración con APIs de IA</li>
-            <li data-i18n="svc.ai.f3">Automatización inteligente</li>
+            <li data-i18n="svc.auto.f1">Automatización de tareas repetitivas</li>
+            <li data-i18n="svc.auto.f2">Flujos automáticos de procesos</li>
+            <li data-i18n="svc.auto.f3">Chatbots y asistentes virtuales</li>
+          </ul>
+        </div>
+
+        <div class="svc-card">
+          <div class="svc-icon"><i class="fas fa-wrench"></i></div>
+          <h3 data-i18n="svc.maint.title">Mantenimiento y Soporte Web</h3>
+          <p data-i18n="svc.maint.desc">Servicio destinado a mantener operativos, seguros y actualizados los productos digitales desarrollados.</p>
+          <ul class="svc-list">
+            <li data-i18n="svc.maint.f1">Cambios y ampliaciones funcionales</li>
+            <li data-i18n="svc.maint.f2">Optimización de rendimiento</li>
+            <li data-i18n="svc.maint.f3">Actualización y modernización tecnológica</li>
+            <li data-i18n="svc.maint.f4">Revisión y solución de incidencias</li>
+          </ul>
+        </div>
+
+        <div class="svc-card">
+          <div class="svc-icon"><i class="fas fa-chart-pie"></i></div>
+          <h3 data-i18n="svc.redisign.title">Rediseño y Optimización Web</h3>
+          <p data-i18n="svc.redisign.desc">Servicio destinado a modernizar la apariencia en diferentes dispositivos y optimizar la experiencia de usuario de los productos digitales.</p>
+          <ul class="svc-list">
+            <li data-i18n="svc.redisign.f1">Rediseño de interfaz de usuario</li>
+            <li data-i18n="svc.redisign.f2">Optimización UI en diferentes dispositivos</li>
+            <li data-i18n="svc.redisign.f3">Optimización para conversion y SEO</li>
+            <li data-i18n="svc.redisign.f4">Integración de nuevas funcionalidades</li>
           </ul>
         </div>
 
@@ -386,13 +392,13 @@
           <div class="form-group">
             <label for="service" data-i18n="contact.service">Servicio de interés</label>
             <select id="service" name="service">
-              <option value="" data-i18n="contact.service.default">Selecciona un servicio</option>
-              <option value="landing" data-i18n="svc.landing.title">Landing Page</option>
+              <option value="" disabled selected data-i18n="contact.service.default">Selecciona un servicio</option>
+              <option value="landing" data-i18n="svc.websites.title">Páginas y Sitios Web</option>
               <option value="webapp" data-i18n="svc.webapp.title">Aplicación Web</option>
               <option value="android" data-i18n="svc.android.title">App Android</option>
+              <option value="dashboard" data-i18n="svc.auto.title">Automatizaciones</option>
               <option value="maint" data-i18n="svc.maint.title">Mantenimiento Web</option>
-              <option value="dashboard" data-i18n="svc.dash.title">Dashboard</option>
-              <option value="ai" data-i18n="svc.ai.title">Asistente IA</option>
+              <option value="ai" data-i18n="svc.redisign.title">Rediseño y Optimización Web</option>
             </select>
           </div>
           <div class="form-group">
@@ -438,17 +444,28 @@
                 class="fab fa-github"></i></a>
             <a href="https://fb.com/astopilco" target="_blank" aria-label="Facebook"><i
                 class="fab fa-facebook-f"></i></a>
-            <a href="https://wa.me/51999999999" target="_blank" aria-label="WhatsApp"><i
+            <a href="https://wa.me/51948571138" target="_blank" aria-label="WhatsApp"><i
                 class="fab fa-whatsapp"></i></a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
         <p data-i18n="footer.copy">© 2025 Wagner Astopilco. Todos los derechos reservados.</p>
-        <p class="footer-made">Made with <i class="fas fa-heart"></i> in Cajamarca, Perú</p>
+        <p class="footer-made"> Cajamarca, Perú</p>
       </div>
     </div>
   </footer>
+
+      <!-- Botón flotante -->
+    <a
+        href="https://wa.me/51948571138?text=Hola%2C%20vi%20tu%20portfolio."
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contactar por WhatsApp"
+    >
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
   <script src="script.js"></script>
 </body>
